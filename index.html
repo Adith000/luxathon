@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Luxathon</title>
     <!-- icons -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- gsap -->
@@ -17,10 +17,10 @@
 <body>
     <div class="container">
 
-        <div class="stripes">
+        <!-- <div class="stripes">
             <div class="line-one"></div>
             <div class="line-two"></div>
-        </div>
+        </div> -->
         <!-- navbar============== -->
         <nav>
             <div class="logo">
@@ -41,26 +41,26 @@
         </nav>
 
         <div class="img">
-            <img src="bulb.png" alt="">
+            <img src="bulb.gif" alt="">
         </div>
 
         <div class="title">
       
             <span>Luxathon 4.0.</span>
-           
-            <p> 8,9,10 December</p>
+         
+            <p>Design . Develop . Illuminate </p>
         </div>
 
-        <div class="btn">
+        <!-- <div class="btn">
             <a href="">Register now</a>
-        </div>
+        </div> -->
 
 
-        <div class="media">
+        <div class="media" style="color: limegreen;">
             <ul>
-                <li><i class="fa fa-facebook"></i></li>
-                <li><i class="fa fa-instagram"></i></li>
-                <li><i class="fa fa-twitter"></i></li>
+                <li><a href="https://www.facebook.com/luxathon"></a><i class="fa fa-facebook"></i></li>
+                <li><a href="https://www.instagram.com/ieee_sb_cek/"></a><i class="fa fa-instagram"></i></li>
+                <li> <i class="fa-brands fa-x-twitter"> </i> </li>
             </ul>
         </div>
 
@@ -68,74 +68,76 @@
     <script>
         TweenMax.from(".logo", 1, {
             opacity: 0,
+            delay: 2,
             x: -20,
             ease: Expo.easeInOut
         })
 
         TweenMax.staggerFrom("nav ul li", 1, {
             opacity: 0,
+            delay: 2.2,
             x: -20,
             ease: Power3.easeInOut
-        }, 0.08)
+        }, 0.8)
 
         TweenMax.from(".search", 1, {
             opacity: 0,
-            delay: .5,
+            delay: 2.35,
             x: -20,
             ease: Expo.easeInOut
         })
 
         TweenMax.from(".menu", 1, {
             opacity: 0,
-            delay: .6,
+            delay: 2.55,
             x: -20,
             ease: Expo.easeInOut
         })
 
         TweenMax.from(".title", 1, {
             opacity: 0,
-            delay: 1,
+            delay: 2.75,
             y: 20,
-            ease: Expo.easeInOut
+            ease: Expo.fadeIn
         })
 
         TweenMax.from(".btn", 1, {
             opacity: 0,
-            delay: 1.6,
+            delay: 2.95,
             y: 20,
             ease: Expo.easeInOut
         })
 
         TweenMax.from(".line-one", 1, {
             opacity: 0,
-            delay: 2,
+            delay: 3.15,
             y: -800,
             ease: Expo.easeInOut
         })
         TweenMax.from(".line-two", 1, {
             opacity: 0,
-            delay: 2.5,
+            delay: 3.35,
             y: -800,
             ease: Expo.easeInOut
         })
 
         TweenMax.from(".img", 2, {
             opacity: 0,
-            delay: 2.9,
+            delay: 0,
             y: -800,
             ease: Expo.easeInOut
         })
 
         TweenMax.from(".year", 1, {
             opacity: 0,
-            delay: 1.4,
+            delay: 3.6,
             y: -20,
             ease: Expo.easeInOut
         })
 
         TweenMax.staggerFrom(".media ul li", 2, {
             opacity: 0,
-            delay: 3.2,
+            delay: 3.,
             y: 40,
             ease: Expo.easeInOut
         }, 0.2)
